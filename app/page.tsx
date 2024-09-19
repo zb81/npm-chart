@@ -1,5 +1,5 @@
-import Link from '@/components/Link'
-import SearchInput from '@/components/SearchInput'
+import Link from '@/components/link'
+import SearchInput from '@/components/search-input'
 import React from 'react'
 
 export default function Page() {
