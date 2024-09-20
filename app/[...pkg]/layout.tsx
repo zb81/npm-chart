@@ -1,5 +1,15 @@
-import HeroiconsMagnifyingGlass from '@/components/icons/magnifying-glass'
 import React from 'react'
+import type { Metadata } from 'next'
+import HeroiconsMagnifyingGlass from '@/components/icons/magnifying-glass'
+
+export function generateMetadata({ params: { pkg } }: { params: { pkg: string[] } }): Metadata {
+  const pkgName = decodeURIComponent(pkg.join('/'))
+
+  return {
+    title: pkgName,
+    description: `Visualize npm downloads in a beautiful chart, ready to be shared with your community.`,
+  }
+}
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
