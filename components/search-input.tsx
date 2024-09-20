@@ -18,7 +18,7 @@ export default function SearchInput() {
       <div className='relative'>
         <input
           type="text"
-          className='pl-3 pr-11 py-2.5 border shadow-sm rounded-md text-sm focus:outline-none  focus-visible:outline-yellow-500  focus-visible:outline-offset-0'
+          className='pl-3 pr-11 dark:border-gray-800 py-2.5 border dark:bg-zinc-900 dark:text-gray-200 shadow-sm rounded-md text-sm focus:outline-none  focus-visible:outline-yellow-500  focus-visible:outline-offset-1'
           placeholder='npm package'
           value={pkg}
           onChange={e => setPkg(e.target.value.trim())}
